@@ -1,7 +1,7 @@
 name = "AirfoilDatabase"
 uuid = "133052f7-5177-44e4-ab05-826656cf3c53"
 authors = ["Cheng XUE <xuecheng@nuaa.edu.cn>"]
-version = "1.0.0"
+version = "1.0.1"
 
 [compat]
 julia = "1"

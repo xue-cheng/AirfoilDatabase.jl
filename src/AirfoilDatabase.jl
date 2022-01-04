@@ -13,7 +13,7 @@ end
 
 include("database.jl")
 
-function query_airfoil(name::String)::Vector{AirfoilData}
+function query_airfoil(name::AbstractString)::Vector{AirfoilData}
     que = split(lowercase(name))
     result = Vector{AirfoilData}()
     for i in 1:db_size
