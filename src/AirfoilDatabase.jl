@@ -1,5 +1,6 @@
 module AirfoilDatabase
 
+using Printf
 struct AirfoilData
     name::String
     desc::String
@@ -25,6 +26,8 @@ function query_airfoil(name::AbstractString)::Vector{AirfoilData}
     return result
 end
 
-export AirfoilData, query_airfoil
+include("NACA.jl")
+
+export AirfoilData, query_airfoil, NACA
 
 end # module

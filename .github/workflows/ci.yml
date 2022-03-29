@@ -13,10 +13,8 @@ jobs:
         version:
           - '1.0'
           - '1'
-          - 'nightly'
         os:
           - ubuntu-latest
-          - windows-latest
         arch:
           - x64
           - x86
