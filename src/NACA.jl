@@ -9,8 +9,9 @@ function NACA(number::AbstractString, x::AbstractVector; sharpTE::Bool=false)
     return NACA(Val(ndig), parse(Int, number), xc, sharpTE)
 end
 
-function NACA(number::AbstractString, np::Int; sharpTE::Bool=false)
+function NACA(number::AbstractString, np::Int=33; sharpTE::Bool=false)
     xc = collect(LinRange(0, π, np))
+    @. xc = (1-cos(xc))/2
     return NACA(number, xc; sharpTE=sharpTE)
 end
 
